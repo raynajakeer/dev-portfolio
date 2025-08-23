@@ -1,0 +1,80 @@
+.lantern-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    padding-bottom: 5%;
+}
+
+.string {
+    width: 2px;
+    height: 200px;
+    background: var(--yellow, #FFDC84);
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.string-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.light-pic {
+    height: 30%;
+    width: 30%;
+}
+
+.light-stand {
+    background: #FFDC84;
+    width: 150px;
+    height: 8px;
+}
+
+.glow {
+    background: rgba(255, 255, 255, 0.5);
+    filter: blur(20px);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.moon {
+    border-radius: 359px;
+    background: linear-gradient(180deg, #FFF 2.06%, #FFDC84 74.22%);
+    box-shadow: -1px 1px 24.5px 0 #FFF;
+    width: 280px;
+    height: 280px;
+    flex-shrink: 0;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moon-text {
+    color: var(--navy-blue, #1B3368);
+    text-align: center;
+    font-family: "Andada Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.moon-description {
+    color: #FFF;
+    text-align: center;
+    /* body */
+    font-family: "Andada Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 8%;
+}
+
