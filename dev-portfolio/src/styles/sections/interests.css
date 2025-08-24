@@ -1,13 +1,22 @@
-.background {
-    background: #0F1F42;
+
+.interests-background {
+    background-color: #0F1F42; /* set background color without overriding image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 10%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-top: -1%;
 }
 
-.title {
+
+.interests-title {
     color: var(--white, #FFF);
     text-align: center;
     font-family: "Andada Pro";
@@ -15,7 +24,13 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    z-index: -1;
-    margin-top: -62%;
 }
+
+.star-group {
+    z-index:0;
+    height: 100%;
+    width:100%;
+    margin-left: 15%;
+}
+
 

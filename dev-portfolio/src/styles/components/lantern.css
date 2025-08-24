@@ -23,6 +23,8 @@
 .light-pic {
     height: 30%;
     width: 30%;
+    animation: sway 6s ease-in-out infinite;
+    transform-origin: top center;
 }
 
 .light-stand {
@@ -45,13 +47,16 @@
     border-radius: 359px;
     background: linear-gradient(180deg, #FFF 2.06%, #FFDC84 74.22%);
     box-shadow: -1px 1px 24.5px 0 #FFF;
-    width: 280px;
-    height: 280px;
+    width: 290px;
+    height: 290px;
     flex-shrink: 0;
     margin-top: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 0;
+    animation: sway 10s ease-in-out infinite;
+    transform-origin: top center;
 }
 
 .moon-text {
@@ -62,14 +67,13 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 12%;
+    margin-right: 12%;
 }
 
 .moon-description {
     color: #FFF;
     text-align: center;
-    /* body */
     font-family: "Andada Pro";
     font-size: 24px;
     font-style: normal;
@@ -78,3 +82,15 @@
     margin-top: 8%;
 }
 
+/* Added animation */
+@keyframes sway {
+    0% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}

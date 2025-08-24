@@ -7,6 +7,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    gap:10px;
+    padding:7%;
 }
 
 .content-container {
@@ -14,8 +18,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    gap: 10px;
-    padding-left: 12%;
+    gap: 5px;
+    margin-left: 10%;
 }
 
 .hello {
@@ -46,7 +50,36 @@
 }
 
 .profile-star {
-    width: 50%;
-    height: 50%;
-    padding-right: 8%
+    width: 40%;
+    height: 40%;
+    padding-right: 6%;
+    
+    /* Apply both animations */
+    animation: 
+        rotate-sway 6s ease-in-out infinite,
+        twinkle 5s ease-in-out infinite;
+    transform-origin: center center;
+}
+
+/* Rotation left-right */
+@keyframes rotate-sway {
+    0% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
+/* Twinkle effect: opacity from 1 to 0.5 and back */
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
 }

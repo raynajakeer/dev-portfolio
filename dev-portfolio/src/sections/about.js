@@ -1,17 +1,26 @@
 import '../styles/sections/about.css';
 import profilePic from '../files/profile-star.png';
+import aboutBG from '../files/about-bg.png';
 function About() {
     return (
         <>
-            <div class="section">
-                <div class='content-container'>
-                    <div class="hello">Hello, my name is</div>
-                    <div class="name">Rayna Jakeer Hussain</div>
-                    <div class="description">Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
+            <div
+                className="section"
+                style={{
+                    backgroundImage: `linear-gradient(180deg, #1B3368 0%, #0F1F42 100%), url(${aboutBG})`,
+                    backgroundBlendMode: 'overlay',
+                    backgroundSize: '100% 100%, 100% 100%',
+                    backgroundPosition: 'center center, center center',
+                    backgroundRepeat: 'no-repeat, no-repeat',
+                }}
+                >
+                <div className='content-container'>
+                    <div className="hello">Hello, my name is</div>
+                    <div className="name">Rayna Jakeer Hussain</div>
+                    <div className="description">I am a versatile individual that is majoring in Computer Science at the Georgia Institute of Technology. My passions lie in the Software Development and Product Management fields as I am avid to build sustainable and innovative technologies.</div>
                 </div>
-                <img class = "profile-star" src={profilePic} alt="profile-star"/>
+                <img className="profile-star" src={profilePic} alt="profile-star" />
             </div>
-
         </>
 
     );

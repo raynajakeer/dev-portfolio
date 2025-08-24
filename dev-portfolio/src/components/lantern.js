@@ -1,6 +1,6 @@
 import '../styles/components/lantern.css';
 import light from '../files/light.png';
-function Lantern() {
+function Lantern({ description, title }) {
     return (
         <>
             <div class="lantern-container">
@@ -13,14 +13,11 @@ function Lantern() {
                 <div class="glow"></div>
                 <div class="moon">
                     <div class="moon-text">
-                        Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        {description}
                     </div>
                 </div>
-                <div class="moon-description">title</div>
-        
+                <div class="moon-description">{title}</div>
             </div>
-
-
         </>
     );
 }

@@ -1,0 +1,46 @@
+/* Main star cursor */
+.star-cursor {
+  position: fixed;
+  pointer-events: none;
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(circle at center, #fff 0%, #ffd700 60%, transparent 80%);
+  clip-path: polygon(
+    50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%
+  ); /* 5-point star shape */
+  /* filter: drop-shadow(0 0 8px #ffd700);  REMOVE THIS */
+  transform: translate(-50%, -50%);
+  animation: shimmer 2s infinite ease-in-out alternate;
+  z-index: 9999;
+  mix-blend-mode: screen;
+}
+
+/* Trailing stars */
+.star-trail {
+  position: fixed;
+  pointer-events: none;
+  width: 18px;
+  height: 18px;
+  background: radial-gradient(circle at center, #fff 0%, #ffd700 60%, transparent 80%);
+  clip-path: polygon(
+    50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%
+  );
+  /* filter: drop-shadow(0 0 6px #ffd700); REMOVE THIS */
+  opacity: 0.6;
+  transform: translate(-50%, -50%);
+  animation: shimmer 2s infinite ease-in-out alternate;
+  mix-blend-mode: screen;
+  z-index: 9998;
+}
+
+/* Adjust shimmer animation to remove brightness and drop-shadow */
+@keyframes shimmer {
+  0%, 100% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
