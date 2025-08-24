@@ -1,0 +1,101 @@
+.certifications-background {
+    background: linear-gradient(180deg, #4F2122 0%, #264FA8 100%);
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 106vh;
+}
+
+.nebula-1 {
+    transform: scale(0.58) translateX(-38%) translateY(-105%);
+    z-index: 100;
+    animation: hueShift 30s linear infinite, glowPulse 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+    transform-origin: center;
+}
+
+.nebula-2 {
+    transform: scale(0.63) translateX(98%) translateY(-360%);
+    z-index: 100;
+    animation: hueShift 30s linear infinite, glowPulse 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+    transform-origin: center;
+}
+
+.software-dev, .aws-cloud, .python {
+    transition: transform 0.3s ease, margin 0.3s ease;
+    will-change: transform;
+}
+
+.software-dev {
+    transform: scale(0.75);
+    margin-left: 0%;
+}
+
+.software-dev:hover {
+    transform: scale(0.78) translateY(-5px);
+}
+
+.aws-cloud {
+    transform: scale(0.83);
+    margin-left: 18%;
+    margin-top: -11%;
+}
+
+.aws-cloud:hover {
+    transform: scale(0.86) translateY(-5px);
+}
+
+.python {
+    transform: scale(0.85);
+    margin-left: 40%;
+    margin-top: -12%;
+}
+
+.python:hover {
+    transform: scale(0.88) translateY(-5px);
+}
+
+
+.certifications-title {
+    color: #FFF;
+    font-family: Faustina;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 5%;
+}
+
+.certifications-description {
+    color: #A1BFC7;
+    font-family: "Andada Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 5.1%;
+}
+
+/* Animations */
+
+@keyframes hueShift {
+    0% {
+        filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5)) hue-rotate(0deg) saturate(100%);
+    }
+    50% {
+        filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8)) hue-rotate(180deg) saturate(130%);
+    }
+    100% {
+        filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5)) hue-rotate(360deg) saturate(100%);
+    }
+}
+
+@keyframes glowPulse {
+    0%, 100% {
+        filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+    }
+    50% {
+        filter: drop-shadow(0 0 30px rgba(255, 255, 255, 1));
+    }
+}

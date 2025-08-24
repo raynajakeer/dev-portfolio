@@ -1,0 +1,44 @@
+/* Navbar.css */
+
+.navbar {
+  position: sticky;         /* Make the navbar stick to the top */
+  top: 0;
+  z-index: 1000;            /* Ensure it stays on top of other content */
+  
+  display: flex;
+  height: 37px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 38px;
+  flex-shrink: 0;
+  background: #1B3368;      /* Dark blue background */
+  padding: 10px 20px;
+}
+
+/* Style for links inside navbar */
+.nav-links {
+  display: flex;
+  gap: 38px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: #FFF;
+  text-align: right;
+  font-family: 'Faustina', serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+
+
+.nav-links li a:hover,
+.nav-links li a:focus,
+.nav-links li a:active {
+  text-decoration: none; /* no underline even on hover/focus */
+  color: #FFDC84;;
+}

@@ -1,0 +1,15 @@
+.contact-background {
+    background: linear-gradient(180deg, #264FA8 0%, #0F1F42 100%);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.contact-title {
+    color: #FFF;
+    text-align: center;
+    font-family: Faustina;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
